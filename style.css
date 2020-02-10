@@ -1,0 +1,142 @@
+
+* {
+  box-sizing: border-box; /*This one line of code makes life so much easier without it I can't make columns work*/
+}
+
+body {
+  background-color: #ffffff; /*Imagine changing colors, wait I can actually do that?*/
+  padding: 2vw;
+}
+
+
+h1 {
+  color: #ff4419;
+  text-align: center;
+}
+
+h2 {
+  color: #000;
+  text-size: 50px;
+  font-family: 'Martel Sans', sans-serif; /*Calling in new font*/
+}
+
+p{
+  color: #000;
+  font-size: 20px;
+}
+
+#slogan {
+  font-size: 15px;
+  font-style: italic;
+  color:black;
+  text-align: center;
+}
+
+#specialtyItem {
+  background-color: #000;
+}
+
+#whiteText {
+  color:white;
+}
+
+#disclaimerText {
+  font-size: 15px;
+  font-style: italic;
+  color:white;
+}
+
+
+.linkbar {
+  overflow: hidden; /* Removes excess stuff to fit box */
+  background-color: #ff0000; /*Happy background olor noises*/
+  border-radius: 25px; /*Laughs in round corners*/
+}
+
+.linkbar a{
+  font-weight: bold;
+  font-size: 20px; /*Changes font size*/
+  float: left; /*Buttons are created from right to left*/
+  display: block; /*block shape display*/
+  color: white; /*color of link bar*/
+  text-align: center; /*buttons are center aligned for text*/
+  padding: 14px 16px; /*padding to separate buttons*/
+  padding-top: 85px; /*padding to move buttons in a more comfortable place*/
+  text-decoration: none; /*Sorry no text decoration this time*/
+  font-family: 'Martel Sans', sans-serif;
+}
+
+.linkbar a:hover {
+  background-color: #ffadcb; /*Color of button when mouse hovers*/
+  color: #ff0000; /*Color of text when mouse hovers*/
+}
+
+.customButton {
+  overflow: hidden; /* Removes excess stuff to fit box */
+}
+
+.customButton a{
+  font-size: 20px; /*Changes font size*/
+  float: left; /*Buttons are created from right to left*/
+  background-color: #ff0000; /*Happy button olor noises*/
+  border-radius: 25px;  /*Rounds the corners */
+  display: block; /*block shape display*/
+  color: white; /*color of link bar*/
+  text-align: center; /*buttons are center aligned for text*/
+  padding: 14px 16px; /*padding to separate buttons*/
+  text-decoration: none; /*Sorry no text decoration this time*/
+}
+
+.customButton a:hover {
+  background-color: #ffadcb ; /*Color of button when mouse hovers*/
+  color: white; /*Color of text when mouse hovers*/
+}
+
+.footer { /*Footer of website */
+  background-color: #ff0000;
+  text-align: center;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+#footerText { /*id for footer text */
+
+  color: white;
+  font-size: 15px;
+  text-align: right;
+}
+
+
+.column{ /*Main class for column */
+  float: left;
+  padding: 10px;
+}
+
+.column.leftImage { /*Sub-types for column depending on text and image*/
+  width: 25%;
+}
+
+.column.rightImage {
+  width: 25%;
+}
+
+.column.rightText {
+  width: 75%;
+}
+
+.column.leftText {
+  width: 75%;
+}
+
+
+.row:after { /*Used to separate rows of columns Resets format for next row */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.center { /*Centers images by making an inline block then editing margins */
+  display: inline-block;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
