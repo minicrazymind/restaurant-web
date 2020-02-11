@@ -1,4 +1,4 @@
-
+`   `
 * {
   box-sizing: border-box; /*This one line of code makes life so much easier without it I can't make columns work*/
 }
@@ -37,15 +37,15 @@ b{
   text-align: center;
 }
 
-#specialtyItem {
+#specialtyItem { /*Hghlighted special item with a black background*/
   background-color: #000;
 }
 
-#whiteText {
+#whiteText { /*Changes font color for white text*/
   color:white;
 }
 
-#disclaimerText {
+#disclaimerText { /*Changes font formats for disclaimer text*/
   font-size: 15px;
   font-style: italic;
   color:white;
